@@ -37,14 +37,16 @@ section{
 }
 
 .btn{
+    font-family: 'Inter';
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: .8rem 3rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
     background: #8C30F5;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: #160026;
     cursor: pointer;
+    color: var(--header-color-font);
 }
 
 header{
@@ -55,7 +57,7 @@ header{
     width: 100%;
     background: var(--header-color);
     box-shadow: 0 .5rem 1rem rgba(103, 28, 224, 0.1);
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,6 +98,8 @@ header label{
 }
 
 .home{
+    
+    padding-bottom: 300px;
     display: flex;
     /*flex-direction: column;*/
     align-items: center;
@@ -105,10 +109,25 @@ header label{
     background-position: center;
 }
 
+.home .image{
+    padding-left: 300px;
+    display:flex;
+}
+
 .home .image img{
-    width: 25vw;
+    
     animation: float 3s linear infinite;
-    padding-left: 100px;
+    
+}
+
+.home .image .celular{
+    width: 25vw;
+}
+
+.home .image .laptop{
+    margin-top: 150px;
+    margin-left: -150px;
+    width: 25vw;
 }
 
 @keyframes float{
@@ -124,6 +143,64 @@ header label{
     font-family: 'Inter';
     font-size: 5.5rem;
     color: #18191F;
+}
+
+.vincular{
+    display: flex;
+    background: #FFFFFF;
+    
+}
+
+.vincular .vincular_content{
+    
+}
+
+.vincular .vincular_content h2{
+    font-family: 'Inter';
+    font-size: 3.5rem;
+    color: #18191F;
+}
+
+.vincular .vincular_content p{
+    font-family: 'Inter';
+    font-size: 1.5rem;
+}
+
+.caracteristicas{
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.caracteristicas .content h2{
+    font-family: 'Inter';
+    font-size: 3.5rem;
+    color: #18191F;
+}
+
+.caracteristicas .content .lista_caracteristicas{
+    display: flex;
+    list-style: none;
+}
+
+.algoritmo{
+    background: #FFFFFF;
+}
+
+.gastos{
+    background: #FFFFFF;
+}
+
+.comunidad{
+    background: #9D93F5;
+}
+
+.descarga{
+    background: #2EC5CE;
+}
+
+.footer_section{
+    background: #0B0D17;
 }
 
 
