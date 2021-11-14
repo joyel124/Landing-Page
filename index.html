@@ -10,24 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11GBHFLKP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-M11GBHFLKP');
-    </script>
 </head>
 <body>
     <!--HEADER-->
     <header class="header" id="header">
-        <a href="#" class="logo">
+        <a href="./index.html" class="logo">
             Free<span>Hour</span>
         </a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar" class="fas fa-bars"></label>  
         <nav class="navbar">
+            <a href="#cuentas"><h2> Servicios</h2></a>
+            <a href=""><h2> Caracteristicas</h2></a>
+            <a href="./contactanos.html"><h2> Publicidad</h2></a>
             <a href="#">
                 <img src="./img/Google Play Badge.png" alt="Android">
             </a>
@@ -42,8 +37,8 @@
         <section class="home" id="home">
            <div class="content">
                <h3>FreeHour:</h3>
-               <h3>Todo en un</h3>
-               <h3>mismo lugar</h3>
+               <h3>Todo en un mismo lugar</h3>
+
                <a href="#" class="btn">Descarga Ahora</a>
            </div>
            <div class="image">
@@ -56,10 +51,10 @@
            </div>
         </section>
         <!--VINCULA TUS CUENTAS-->
-        <section class="vincular">
+        <section class="vincular" id = "cuentas">
             <div class="vincular_content">
                  <h2>Vincula tus servicios</h2>
-                 <p>Vincula todas las plataformas que organizaran tu contenido y encontrar justo lo que necesitas.</p>
+                 <p>Vincula todas las plataformas que organizaran tu contenido y encuentra justo lo que necesitas.</p>
             </div>
             <div class="aplicaciones_img">
                 <img src="./img/Logos.png" alt="circulo">
@@ -72,29 +67,41 @@
                 <div class="lista_caracteristicas">
                     <ul>
                         <li>
-                            <img src="./img/Feature Icon with circle.png" alt="">
-                            <div>
+                            <div class="caracteristicas_items">
+                                <img src="./img/Feature Icon with circle.png" alt="">
+                            </div>                            
+                            <div class="caracteristicas_items_2">
                                 <h3>Recomendaciones</h3>
                                 <p>Recibe las mejores recomendaciones de películas, series y videojuegos según tus gustos y criterios. Todo en un mismo lugar!</p>
                             </div>
                         </li>
                         <li>
-                            <img src="./img/Feature Icon with circle.png" alt="">
-                            <div>
+                            <div class="caracteristicas_items">
+                                <img src="./img/Feature Icon with circle.png" alt="">
+                            </div>
+                            <div class="caracteristicas_items_2">
                                 <h3>Mi lista</h3>
                                 <p>Agrega todo el contenido que deseas guardar y ver más tarde en tu lista personalizada. </p>
                             </div>
                         </li>
                         <li>
-                            <img src="./img/Feature Icon with circle.png" alt="">
-                            <h3>Sigue amigos y usuarios</h3>
-                            <p>Conoce la actividad de tus amigos y de otros usuarios de la plataforma. Crea reseñas, recomienda contenido y más!</p>
+                            <div class="caracteristicas_items">
+                                <img src="./img/Feature Icon with circle.png" alt="">
+                            </div>
+                            <div class="caracteristicas_items_2">
+                                <h3>Sigue amigos y usuarios</h3>
+                                <p>Conoce la actividad de tus amigos y de otros usuarios de la plataforma. Crea reseñas, recomienda contenido y más!</p>
+                            </div>
                         </li>
                         <li>
-                            <img src="./img/Feature Icon with circle.png" alt="">
-                            <h3>Registra tu actividad y recibe notificaciones</h3>
-                            <p>Lleva el registro de tu actividad automáticamente y recibe notificaciones de las novedades de tu contenido
-                                favorito para que nunca te pierdas de nada.</p>
+                            <div class="caracteristicas_items">
+                                <img src="./img/Feature Icon with circle.png" alt="">
+                            </div>
+                            <div class="caracteristicas_items_2">
+                                <h3>Registra tu actividad y recibe notificaciones</h3>
+                                <p>Lleva el registro de tu actividad automáticamente y recibe notificaciones de las novedades de tu contenido
+                                    favorito para que nunca te pierdas de nada.</p>
+                            </div>                            
                         </li>
                     </ul>
                 </div>
@@ -105,14 +112,16 @@
         </section>
         <!--SOBRE EL ALGORITMO-->
         <section class="algoritmo">
-            <div class="content">
-                <h3>Sobre el algoritmo de recomendacion</h3>
-                <p>Nuestro sistema de recomendación esta basado en ti.</p>
-                <p>Filtra el contenido que quieres según tus gustos, actividad reciente, recomendaciones de tus contactos y otros criterios.</p>
-                <p>Descubre tu nuevo contenido favorito y no te vuelvas a aburrir.</p>
-            </div>
-            <div>
-                <img src="./img/iPhone X_algoritmo.png" alt="algoritmo">
+            <div class="card">
+                <div class="content">
+                    <h3>Sobre el algoritmo de recomendacion</h3>
+                    <p>Nuestro sistema de recomendación esta basado en ti.</p>
+                    <p>Filtra el contenido que quieres según tus gustos, actividad reciente, recomendaciones de tus contactos y otros criterios.</p>
+                    <p>Descubre tu nuevo contenido favorito y no te vuelvas a aburrir.</p>
+                </div>
+                <div>
+                    <img src="./img/iPhone X_algoritmo.png" alt="algoritmo">
+                </div>
             </div>
         </section>
         <!--GESTIONA TUS GASTOS-->
@@ -138,8 +147,10 @@
         <!--DESCARGA-->
         <section class="descarga">
             <div class="content">
-                <h2>Vence el aburrimiento</h2>
-                <h2>desde tu celular</h2>
+                <div class="title">
+                    <h2>Vence el aburrimiento</h2>
+                    <h2>desde tu celular</h2>
+                </div>
                 <p>Descarga la app para ya no volverte a sentir aburrido</p>
                 <p>Descarga el app</p>
                 <div class="img_descarga_app">
@@ -163,13 +174,18 @@
         
         <div class="content">
             <h2>FreeHour</h2>
+            <h3>Siguenos en:</h3>
+            <div class="redes">
+                <a href="#"> <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/> </a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/facebook.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a> 
+            </div>
+
             <nav class="menu">
                 <ul>
-                    <li>Sobre Nosotros</li>
-                    <li> Publicidad</li>
-                    <li>Trabaja  con Nosotros</li>
-                    <li>Centro de Ayuda</li>
-                    <li>Política de Privacidad</li>
+                    <a href="./index.html#cuentas"><li>Contactanos</li></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><li>Conocenos</li></a>
+                    <a href="https://www.caf.com/es/politica-de-privacidad-de-datos/"><li>Politica de Privaciadad</li></a>
                 </ul>
             </nav>
             <p>© 2021 FreeHour, Lima-Peru. All rights reserved</p>
